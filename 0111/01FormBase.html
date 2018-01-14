@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>The base Form Label</title>
+	</head>
+	<body>
+		<form action="../0110/0300NavigationFrame.html" method="GET" target="_blank" accept-charset="UTF-8">
+		First name:<br/>
+		<input type="text" name="firstname" value="su"/><br/>
+		Last name:<br/>
+		<input type="text" name="lastname" value="canhui"/>
+		<fieldset>
+			<legend>Personal sex</legend>
+			<input type="radio" name="sex" value="male" checked="checked">Male</input><br/>
+			<input type="radio" name="sex" value="female">Female</input>
+		</fieldset>
+		Address<select name="native">
+			<option value="hunan" selected="selected">Hu nan</option>
+			<option value="guangzhou">Guang zhou</option>
+			<option value="shenzhen">Shen zhen</option>
+		</select>
+		<br/><textarea name="message" rows="10" cols="30">I am a ...</textarea>
+		<br/><button type="button" onclick="alert('Your input is Ok')">Check!</button>
+		<br/>
+		<input type="text" name="ie" list="browsers">
+		<datalist id="browsers">
+			<option value="Internet Explorer"/>
+			<option value="Firefox"/>
+			<option value="Chrome"/>
+		</datalist>
+		<br/><input type="submit" value="Submit" />
+	</body>
+</html>

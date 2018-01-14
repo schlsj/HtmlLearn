@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Form input type</title>
+	</head>
+	<body>
+		<form action="../0110/0300NavigationFrame.html">
+		First name:<input type="text" name="firstname" pattern="[a-z]{1,3}"/><br/>
+		Last name:<input type="text"  name="secondname" placeholder="input you lastname"/><br/>
+		Pass word:<input type="password" name="password" required="required"/><br/>
+		<br/>
+		<fieldset>
+			<legend>Select sex</legend>
+			<input type="radio" name="sex" value="male">Male</input>
+			<input type="radio" name="sex" value="female">Female</input>
+		</fieldset>
+		<fieldset>
+			<legend>Select transport</legend>
+			<input type="checkbox" name="transport" value="car">Car</input>
+			<input type="checkbox" name="transport" value="bus">Bus</input>
+			<input type="checkbox" name="transport" value="metro">Metro</input>
+			<input type="checkbox" name="transoport" value="bike">Bike</input>
+		</fieldset>
+		Age:<input type="number" name="age" min="1" max="150" step="10"/>
+		<br/>Birth day:<input type="date" name="bday"/>
+		<br/>The favourite color:<input type="color" name="favcolor"/>
+		<br/>The target week(seem not supported):<input type="week" name="tweek"/>
+		<br/>The target datetime(not supported):<input type="datetime" name="ttime"/>
+		<br/>E-mail:<input type="email" name="email"/>
+		<br/>Search Google:<input type="search" name="googlesearch"/>
+		<br/>Telephone(seem willn't be supported):<input type="tel" name="usrtel" />
+		<br/>Add your homepage:<input type="url" name="homepage"/>
+		<br/><input type="button" onclick="alert('Haha, you input the right thing')" value="Check!"/>
+		</br><input type="submit" value="MySubmit"/>
+		</form>
+	</body>
+</html>
