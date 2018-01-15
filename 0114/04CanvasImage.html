@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+		Your browser does not support the canvas element.
+		</canvas>
+		<script type="text/javascript">
+		var c=document.getElementById("myCanvas");
+		var cxt=c.getContext("2d");
+		var imag=new Image();
+		imag.src="eg_flower.png";
+		cxt.drawImage(imag,0,0);
+		</script>
+		<p>when use image as the image variant name, it didn't show the image.<br/>
+		so image is a key?</p>
+	</body>
+</html>
