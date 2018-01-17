@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<body>
+		<div id="result"></div>
+		<script>
+		if(typeof(Storage)!="undefined"){
+			<!-- localStorage.setItem("lastname", "Canhui"); -->
+			document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+		}else{
+			document.getElementById("result").innerHTML="sorry, you browser didn't support web storage...";
+		}
+		</script>
+	</body>
+</html>

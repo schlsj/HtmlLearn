@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+		function clickCounter(){
+			if(typeof(Storage)!="undefined"){
+				if(sessionStorage.clickcount){
+					sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+				}else{
+					sessionStorage.clickcount=1;
+				}
+				document.getElementById("result").innerHTML="You have clicked this button "
+					+sessionStorage.clickcount+ " times!";
+			}else{
+				document.getElementById("result").innerHTML="Sorry, you browser didn't support web storeage...";
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<p><button onclick="clickCounter()" type="button">Please click here!</button></p>
+		<div id="result"></div>
+		<p>please click the button to add the clickTime.</p>
+		<p>when you have close the browser, the clickTime will continuous.</p>
+	</body>
+</html>
